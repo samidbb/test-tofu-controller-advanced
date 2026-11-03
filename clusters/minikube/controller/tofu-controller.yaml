@@ -27,16 +27,16 @@ spec:
         name: tofu-controller
         namespace: flux-system
       interval: 1m
-  values:
-    branchPlanner:
-      enabled: true
+  # values:
+  #   branchPlanner:
+  #     enabled: true
 ---
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  namespace: flux-system
-  name: branch-planner
-data:
-  secretName: branch-planner-token
-  resources: |-
-    - namespace: flux-system
+# apiVersion: v1
+# kind: ConfigMap
+# metadata:
+#   namespace: flux-system
+#   name: branch-planner
+# data:
+#   secretName: branch-planner-token
+#   resources: |-
+#     - namespace: flux-system
