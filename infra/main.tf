@@ -27,7 +27,7 @@ data "aws_iam_policy_document" "this" {
 }
 
 resource "aws_iam_role" "this" {
-  name               = "tofu-ctrl-testing"
+  name               = "tofu-ctrl-testing_2" # test change here!
   assume_role_policy = data.aws_iam_policy_document.this.json
 }
 
